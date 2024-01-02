@@ -111,11 +111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj",
+      "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj",
       "projectName": "ExcelCompare.Domain",
-      "projectPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj",
+      "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\obj\\",
+      "outputPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

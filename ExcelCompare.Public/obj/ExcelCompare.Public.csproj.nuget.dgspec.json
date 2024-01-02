@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare.Public\\ExcelCompare.Public.csproj": {}
+    "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.Public.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare.Public\\ExcelCompare.Public.csproj": {
+    "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.Public.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare.Public\\ExcelCompare.Public.csproj",
+        "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.Public.csproj",
         "projectName": "ExcelCompare.Public",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare.Public\\ExcelCompare.Public.csproj",
+        "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.Public.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare.Public\\obj\\",
+        "outputPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj"
+              "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj": {
+                "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj": {
+    "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj",
+        "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj",
         "projectName": "ExcelCompare.Domain",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.Domain.csproj",
+        "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\obj\\",
+        "outputPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
