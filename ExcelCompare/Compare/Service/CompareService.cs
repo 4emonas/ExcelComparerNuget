@@ -1,15 +1,15 @@
-﻿using ExcelCompareNuget.Commands.Abstract;
-using ExcelCompareNuget.Commands.Reader;
-using ExcelCompareNuget.Compare.Entities;
+﻿using ExcelCompareNuget.Compare.Entities;
 using ExcelCompareNuget.Models;
+using ExcelCompareNuget.Read;
+using ExcelCompareNuget.Read.Abstract;
 
-namespace ExcelCompareNuget.Compare.Command;
+namespace ExcelCompareNuget.Compare.Service;
 
-public class CompareCommand
+public class CompareService
 {
     private readonly IReader _reader;
 
-    public CompareCommand()
+    public CompareService()
     {
         _reader = new Reader();
     }

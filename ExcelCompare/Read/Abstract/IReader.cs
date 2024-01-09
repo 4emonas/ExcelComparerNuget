@@ -1,7 +1,7 @@
 ﻿using ExcelCompareNuget.Models;
 using ExcelCompareNuget.Models.Abstract;
 
-namespace ExcelCompareNuget.Commands.Abstract;
+namespace ExcelCompareNuget.Read.Abstract;
 
 public interface IReader
 {

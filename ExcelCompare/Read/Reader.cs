@@ -1,11 +1,11 @@
 ﻿using System.Text;
 using System.Data;
 using ExcelDataReader;
-using ExcelCompareNuget.Commands.Abstract;
+using ExcelCompareNuget.Read.Abstract;
 using ExcelCompareNuget.Models.Abstract;
 using ExcelCompareNuget.Models;
 
-namespace ExcelCompareNuget.Commands.Reader;
+namespace ExcelCompareNuget.Read;
 
 public class Reader : IReader
 {
