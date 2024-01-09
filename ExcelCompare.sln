@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelCompare.Domain", "ExcelCompare\ExcelCompare.Domain.csproj", "{BD70283F-E4C8-492C-9C57-2498992CFF22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelCompareNuget", "ExcelCompare\ExcelCompareNuget.csproj", "{BD70283F-E4C8-492C-9C57-2498992CFF22}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelCompare.Public", "ExcelCompare.Public\ExcelCompare.Public.csproj", "{CD42A7A9-E1FB-4AB9-9A48-015DB44F8A18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelCompare", "ExcelCompare.Public\ExcelCompare.csproj", "{CD42A7A9-E1FB-4AB9-9A48-015DB44F8A18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

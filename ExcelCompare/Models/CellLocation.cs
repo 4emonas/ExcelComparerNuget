@@ -1,6 +1,6 @@
-﻿using ExcelCompare.Domain.Helpers;
+﻿using ExcelCompareNuget.Helpers;
 
-namespace ExcelCompare.Domain.Models;
+namespace ExcelCompareNuget.Models;
 
 public class CellLocation
 {

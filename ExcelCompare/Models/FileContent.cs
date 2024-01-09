@@ -1,5 +1,5 @@
 ﻿
-namespace ExcelCompare.Domain.Models;
+namespace ExcelCompareNuget.Models;
 
 public class FileContent
 {

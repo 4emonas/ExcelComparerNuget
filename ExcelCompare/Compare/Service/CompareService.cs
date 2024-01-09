@@ -1,26 +1,27 @@
-﻿using ExcelCompare.Domain.Commands.Abstract;
-using ExcelCompare.Domain.Models.Abstract;
-using ExcelCompare.Domain.Models;
+﻿using ExcelCompareNuget.Commands.Abstract;
+using ExcelCompareNuget.Commands.Reader;
+using ExcelCompareNuget.Compare.Entities;
+using ExcelCompareNuget.Models;
 
-namespace ExcelCompare.Domain.Commands.Comparer;
+namespace ExcelCompareNuget.Compare.Command;
 
-public class Comparer : IComparer
+public class CompareCommand
 {
     private readonly IReader _reader;
 
-    public Comparer()
+    public CompareCommand()
     {
-        _reader = new Reader.Reader();
+        _reader = new Reader();
     }
 
-    public IResult CompareInputs(IInput inputFileA, IInput inputFileB)
+    public CompareResponse CompareInputs(CompareRequest compareRequest)
     {
         var cellsOnlyInFileA = new List<string?>();
         var cellsOnlyInFileB = new List<string?>();
         var cellsWithDifferentValues = new List<string?>();
 
-        var fileContentA = _reader.ReadFile(inputFileA);
-        var fileContentB = _reader.ReadFile(inputFileB);
+        var fileContentA = _reader.ReadFile(compareRequest.InputFileA);
+        var fileContentB = _reader.ReadFile(compareRequest.InputFileB);
 
         ValidateInputs(fileContentA, fileContentB);
 
@@ -38,7 +39,7 @@ public class Comparer : IComparer
 
         IterateThroughRestOfFile(minRows, fileContentA, fileContentB, cellsOnlyInFileA, cellsOnlyInFileB, cellsWithDifferentValues);
 
-        return new Result(cellsOnlyInFileA, cellsOnlyInFileB, cellsWithDifferentValues);
+        return new CompareResponse(cellsOnlyInFileA, cellsOnlyInFileB, cellsWithDifferentValues);
     }
 
     private void ValidateInputs(FileContent fileContentA, FileContent fileContentB)
@@ -48,7 +49,8 @@ public class Comparer : IComparer
             throw new ArgumentNullException($"Unable to read one or both of the input files.");
         }
     }
-    public void IterateThroughFileRows(int minRows, int maxRows, FileContent fileContent, List<string?> listDestination)
+
+    private void IterateThroughFileRows(int minRows, int maxRows, FileContent fileContent, List<string?> listDestination)
     {
         for (int i = minRows; i <= maxRows - 1; i++)
         {
@@ -56,7 +58,7 @@ public class Comparer : IComparer
         }
     }
 
-    public void IterateThroughFileColumns(int minColumns, List<object?> row, int rowIndex, List<string?> listDestination)
+    private  void IterateThroughFileColumns(int minColumns, List<object?> row, int rowIndex, List<string?> listDestination)
     {
         for (int j = minColumns; j < row.Count; j++)
         {
@@ -67,7 +69,7 @@ public class Comparer : IComparer
         }
     }
 
-    public void IterateThroughRestOfFile(int minRows, FileContent fileContentA, FileContent fileContentB, List<string?> cellsOnlyInFileA, List<string?> cellsOnlyInFileB, List<string?> cellsWithDifferentValues)
+    private void IterateThroughRestOfFile(int minRows, FileContent fileContentA, FileContent fileContentB, List<string?> cellsOnlyInFileA, List<string?> cellsOnlyInFileB, List<string?> cellsWithDifferentValues)
     {
         for (int i = 0; i < minRows; i++)
         {
@@ -93,7 +95,7 @@ public class Comparer : IComparer
         }
     }
 
-    public void CompareCommonCells(int minColumns, int rowIndex, List<object?> rowA, List<object?> rowB, List<string?> cellsOnlyInFileA, List<string?> cellsOnlyInFileB, List<string?> cellsWithDifferentValues)
+    private void CompareCommonCells(int minColumns, int rowIndex, List<object?> rowA, List<object?> rowB, List<string?> cellsOnlyInFileA, List<string?> cellsOnlyInFileB, List<string?> cellsWithDifferentValues)
     {
         for (int j = 0; j < minColumns; j++)
         {
@@ -111,5 +113,4 @@ public class Comparer : IComparer
             }
         }
     }
-
 }

@@ -32,7 +32,7 @@
           "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
         }
       },
-      "ExcelCompare.Domain/1.0.0": {
+      "ExcelCompareNuget/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -41,10 +41,10 @@
           "System.Data.DataSetExtensions": "4.5.0"
         },
         "compile": {
-          "bin/placeholder/ExcelCompare.Domain.dll": {}
+          "bin/placeholder/ExcelCompareNuget.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ExcelCompare.Domain.dll": {}
+          "bin/placeholder/ExcelCompareNuget.dll": {}
         }
       }
     }
@@ -112,15 +112,15 @@
         "version.txt"
       ]
     },
-    "ExcelCompare.Domain/1.0.0": {
+    "ExcelCompareNuget/1.0.0": {
       "type": "project",
-      "path": "../ExcelCompare/ExcelCompare.Domain.csproj",
-      "msbuildProject": "../ExcelCompare/ExcelCompare.Domain.csproj"
+      "path": "../ExcelCompare/ExcelCompareNuget.csproj",
+      "msbuildProject": "../ExcelCompare/ExcelCompareNuget.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ExcelCompare.Domain >= 1.0.0"
+      "ExcelCompareNuget >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -129,9 +129,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.Public.csproj",
-      "projectName": "ExcelCompare.Public",
-      "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.Public.csproj",
+      "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.csproj",
+      "projectName": "ExcelCompare",
+      "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\ExcelCompare.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare.Public\\obj\\",
       "projectStyle": "PackageReference",
@@ -150,8 +150,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj": {
-              "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj"
+            "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompareNuget.csproj": {
+              "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompareNuget.csproj"
             }
           }
         }

@@ -1,11 +1,11 @@
 ﻿using System.Text;
 using System.Data;
 using ExcelDataReader;
-using ExcelCompare.Domain.Commands.Abstract;
-using ExcelCompare.Domain.Models.Abstract;
-using ExcelCompare.Domain.Models;
+using ExcelCompareNuget.Commands.Abstract;
+using ExcelCompareNuget.Models.Abstract;
+using ExcelCompareNuget.Models;
 
-namespace ExcelCompare.Domain.Commands.Reader;
+namespace ExcelCompareNuget.Commands.Reader;
 
 public class Reader : IReader
 {
@@ -14,7 +14,7 @@ public class Reader : IReader
     /// </summary>
     /// <param name="input">The file. The stream and the file name are used, in order to read the file contents</param>
     /// <returns>FileContent object</returns>
-    public FileContent ReadFile(IInput input)
+    public FileContent ReadFile(IFileInput input)
     {
         var result = new FileContent(input.FilePath);
         result.Content = ReadFileContent(input);
@@ -25,7 +25,7 @@ public class Reader : IReader
     /// Opens the file stream and reads the content of the file.
     /// </summary>
     /// <returns>List of List of objects"</returns>
-    private List<List<object?>> ReadFileContent(IInput input)
+    private List<List<object?>> ReadFileContent(IFileInput input)
     {
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
@@ -46,7 +46,7 @@ public class Reader : IReader
     /// Creates the reader method depending on the file format.
     /// </summary>
     /// <param name="input">Input file. Filename is used for this method.</param>
-    private Func<Stream, ExcelReaderConfiguration, IExcelDataReader> CreateReaderMethod(IInput input)
+    private Func<Stream, ExcelReaderConfiguration, IExcelDataReader> CreateReaderMethod(IFileInput input)
     {
         return input.IsCsv()
             ? ExcelReaderFactory.CreateCsvReader

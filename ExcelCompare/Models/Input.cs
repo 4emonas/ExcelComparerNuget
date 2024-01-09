@@ -1,8 +1,8 @@
-﻿using ExcelCompare.Domain.Models.Abstract;
+﻿using ExcelCompareNuget.Models.Abstract;
 
-namespace ExcelCompare.Domain.Models;
+namespace ExcelCompareNuget.Models;
 
-public class Input : IInput
+public class Input : IFileInput
 {
     public string FilePath { get; set; }
 

@@ -1,6 +1,6 @@
-﻿namespace ExcelCompare.Domain.Models.Abstract;
+﻿namespace ExcelCompareNuget.Models.Abstract;
 
-public interface IInput
+public interface IFileInput
 {
     public string FilePath { get; }
 

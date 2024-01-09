@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DK/WjE2m1nm7tAsQDMYSkisnUpVW6mEpfGcjub93TpP3YhO/671Bgpkd6/LZy9lEYJ0fN4ayVVUYorq7ce2p4g==",
+  "dgSpecHash": "B9mHKL6YW+MsmUh8hsHkqYPArczZcKSNtbxfb7wipixTDIF9d7EAiKJmCXBHBPixTC49qSN0JUneNneCrHhyvQ==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.Domain.csproj",
+  "projectFilePath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompareNuget.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",

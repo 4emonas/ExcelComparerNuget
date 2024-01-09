@@ -1,9 +1,10 @@
 ﻿
-using ExcelCompare.Domain.Models.Abstract;
+using ExcelCompareNuget.Compare.Entities;
+using ExcelCompareNuget.Models.Abstract;
 
 namespace ExcelCompare.Public.Commands.Abstract;
 
 public interface IExcelpCompareCommands
 {
-    public IResult CompareFiles(IInput inputFileA, IInput inputFileB);
+    public CompareResponse CompareFiles(IFileInput inputFileA, IFileInput inputFileB);
 }

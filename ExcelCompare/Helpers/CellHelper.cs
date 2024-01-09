@@ -1,12 +1,12 @@
 ﻿
-namespace ExcelCompare.Domain.Helpers;
+namespace ExcelCompareNuget.Helpers;
 
 public static class CellHelper
 {
     /// <summary>
     /// Translates a column index number to a letter
     /// </summary>
-    /// <returns>Example index 4 gets translated to D</returns>
+    /// <returns>Example index 4 gets translated to D, index 5 gets translated to E</returns>
     public static string GetExcelColumnName(int columnNumber)
     {
         var columnName = string.Empty;
