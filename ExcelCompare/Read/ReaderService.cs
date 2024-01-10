@@ -7,7 +7,7 @@ using ExcelCompareNuget.Models;
 
 namespace ExcelCompareNuget.Read;
 
-public class Reader : IReader
+public class ReaderService : IReaderService
 {
     /// <summary>
     /// Reads the content of the file.

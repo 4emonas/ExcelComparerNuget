@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.csproj": {}
+    "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.csproj": {
+    "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.csproj",
+        "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.csproj",
         "projectName": "ExcelCompare",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\ExcelCompare.csproj",
+        "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ExcelCompare\\ExcelCompare\\obj\\",
+        "outputPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

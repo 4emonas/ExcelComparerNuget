@@ -3,7 +3,7 @@ using ExcelCompareNuget.Models.Abstract;
 
 namespace ExcelCompareNuget.Read.Abstract;
 
-public interface IReader
+public interface IReaderService
 {
     /// <summary>
     /// Reads the content of the file.

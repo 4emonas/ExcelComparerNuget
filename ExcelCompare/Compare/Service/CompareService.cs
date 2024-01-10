@@ -7,11 +7,11 @@ namespace ExcelCompareNuget.Compare.Service;
 
 public class CompareService
 {
-    private readonly IReader _reader;
+    private readonly IReaderService _reader;
 
     public CompareService()
     {
-        _reader = new Reader();
+        _reader = new ReaderService();
     }
 
     public CompareResponse CompareInputs(CompareRequest compareRequest)

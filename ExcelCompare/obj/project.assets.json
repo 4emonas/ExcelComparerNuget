@@ -111,9 +111,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompareNuget.csproj",
-      "projectName": "ExcelCompareNuget",
-      "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompareNuget.csproj",
+      "projectUniqueName": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.csproj",
+      "projectName": "ExcelCompare",
+      "projectPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\ExcelCompare.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Dev\\ExcelComparerNuget\\ExcelCompare\\obj\\",
       "projectStyle": "PackageReference",
