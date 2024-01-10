@@ -2,7 +2,7 @@
 
 namespace ExcelCompareNuget.Models;
 
-public class Input : IFileInput
+public class FileInput : IFileInput
 {
     public string FilePath { get; set; }
 
