@@ -1,11 +1,12 @@
 ﻿using ExcelCompareNuget.Compare.Entities;
+using ExcelCompareNuget.Compare.Service.Abstract;
 using ExcelCompareNuget.Models;
 using ExcelCompareNuget.Read;
 using ExcelCompareNuget.Read.Abstract;
 
 namespace ExcelCompareNuget.Compare.Service;
 
-public class CompareService
+public class CompareService : ICompareService
 {
     private readonly IReaderService _reader;
 
