@@ -29,7 +29,7 @@ namespace ExcelComparerNugetTests
             var result = _subject.ReadFile(fileInput);
             Assert.IsNotNull(result);
             Assert.IsNotNull(result.Content);
-            Assert.AreEqual(fileContentSize, result.Content.Count);
+            Assert.That(result.Content.Count, Is.EqualTo(fileContentSize));
         }
 
         [Test]
@@ -41,7 +41,7 @@ namespace ExcelComparerNugetTests
             var result = _subject.ReadFile(fileInput);
             Assert.IsNotNull(result);
             Assert.IsNotNull(result.Content);
-            Assert.AreEqual(8, result.Content.Count);
+            Assert.That(result.Content.Count, Is.EqualTo(8));
         }
 
         [Test]
@@ -65,7 +65,7 @@ namespace ExcelComparerNugetTests
             var result = _subject.ReadFile(fileInput);
             Assert.IsNotNull(result);
             Assert.IsNotNull(result.Content);
-            Assert.AreEqual(expected, result.Content);
+            Assert.That(result.Content, Is.EqualTo(expected));
         }
     }
 }

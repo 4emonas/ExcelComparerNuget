@@ -63,7 +63,7 @@ public class CompareService : ICompareService
     {
         for (int j = minColumns; j < row.Count; j++)
         {
-            if (!string.IsNullOrEmpty(row[j].ToString()))
+            if (!string.IsNullOrEmpty(row[j]!.ToString()))
             {
                 listDestination.Add(new CellLocation(rowIndex, j).ToString());
             }
@@ -100,15 +100,15 @@ public class CompareService : ICompareService
     {
         for (int j = 0; j < minColumns; j++)
         {
-            if (string.IsNullOrEmpty(rowA[j].ToString()) && !string.IsNullOrEmpty(rowB[j].ToString()))
+            if (string.IsNullOrEmpty(rowA[j]!.ToString()) && !string.IsNullOrEmpty(rowB[j]!.ToString()))
             {
                 cellsOnlyInFileB.Add(new CellLocation(rowIndex, j).ToString());
             }
-            else if (string.IsNullOrEmpty(rowB[j].ToString()) && !string.IsNullOrEmpty(rowA[j].ToString()))
+            else if (string.IsNullOrEmpty(rowB[j]!.ToString()) && !string.IsNullOrEmpty(rowA[j]!.ToString()))
             {
                 cellsOnlyInFileA.Add(new CellLocation(rowIndex, j).ToString());
             }
-            else if (!string.Equals(rowA[j].ToString(), rowB[j].ToString()))
+            else if (!string.Equals(rowA[j]!.ToString(), rowB[j]!.ToString()))
             {
                 cellsWithDifferentValues.Add(new CellLocation(rowIndex, j).ToString());
             }

@@ -8,7 +8,10 @@ public class FileInput : IFileInput
 
     public FileStream FileStream { get; internal set; }
 
-    public FileInput() { }
+    public FileInput() 
+    {
+        FilePath = string.Empty;
+    }
 
     public FileInput(string filepath)
     {
