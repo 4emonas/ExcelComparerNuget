@@ -28,9 +28,11 @@ public class ReaderService : IReaderService
     private List<List<object?>> ReadFileContent(IFileInput input)
     {
         Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-
         var readerMethod = CreateReaderMethod(input);
-        using var stream = File.Open(input.FilePath, FileMode.Open, FileAccess.Read);
+
+        using var stream = input.HasStream()
+            ? input.FileStream
+            : File.Open(input.FilePath, FileMode.Open, FileAccess.Read);
         using var reader = readerMethod(stream, null);
 
         do

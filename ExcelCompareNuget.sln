@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelCompare", "ExcelCompare\ExcelCompare.csproj", "{BD70283F-E4C8-492C-9C57-2498992CFF22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelComparerNugetTests", "ExcelComparerNugetTests\ExcelComparerNugetTests.csproj", "{397965EB-40B0-4FB5-B55B-09E01B850796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BD70283F-E4C8-492C-9C57-2498992CFF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD70283F-E4C8-492C-9C57-2498992CFF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD70283F-E4C8-492C-9C57-2498992CFF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397965EB-40B0-4FB5-B55B-09E01B850796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397965EB-40B0-4FB5-B55B-09E01B850796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397965EB-40B0-4FB5-B55B-09E01B850796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397965EB-40B0-4FB5-B55B-09E01B850796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
