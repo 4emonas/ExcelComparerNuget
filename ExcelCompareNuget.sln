@@ -5,7 +5,12 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelCompare", "ExcelCompare\ExcelCompare.csproj", "{BD70283F-E4C8-492C-9C57-2498992CFF22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelComparerNugetTests", "ExcelComparerNugetTests\ExcelComparerNugetTests.csproj", "{397965EB-40B0-4FB5-B55B-09E01B850796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelComparerNugetTests", "ExcelComparerNugetTests\ExcelComparerNugetTests.csproj", "{397965EB-40B0-4FB5-B55B-09E01B850796}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B913ECFD-5E17-436C-8182-CDADE1597A57}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
