@@ -38,6 +38,7 @@ public class CompareService : ICompareService
             IterateThroughFileRows(minRows, fileContentB.Content.Count, fileContentB, cellsOnlyInFileB);
         }
 
+        minRows = minRows == 0 ? fileContentA.Content.Count : minRows;
         IterateThroughRestOfFile(minRows, fileContentA, fileContentB, cellsOnlyInFileA, cellsOnlyInFileB, cellsWithDifferentValues);
 
         return new CompareResponse(cellsOnlyInFileA, cellsOnlyInFileB, cellsWithDifferentValues);
