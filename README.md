@@ -1,1 +1,1 @@
-https://www.nuget.org/packages/ExcelCompare
+Nuget page: https://www.nuget.org/packages/ExcelCompare
