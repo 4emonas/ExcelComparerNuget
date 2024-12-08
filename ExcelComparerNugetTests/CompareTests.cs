@@ -9,6 +9,7 @@ namespace ExcelComparerNugetTests
     {
         private const string Csv_TestFile_Path = "TestInputFiles/csv_test.csv";
         private const string Csv_TestFile_Path_2 = "TestInputFiles/csv_test2.csv";
+        private const string Csv_TestFile_Path_3 = "TestInputFiles/csv_test3.csv";
         private const string Xlsx_TestFile_Path = "TestInputFiles/excel_test.xlsx";
         private const string Xlsx_TestFile_Path_2 = "TestInputFiles/excel_test2.xlsx";
 
@@ -57,6 +58,19 @@ namespace ExcelComparerNugetTests
             Assert.That(compareResponse.CellsOnlyInFileA, Is.EqualTo(expectedCellsOnlyInFileA));
             Assert.That(compareResponse.CellsOnlyInFileB, Is.EqualTo(expectedCellsOnlyInFileB));
             Assert.That(compareResponse.CellsWithDifferentValues, Is.EqualTo(expectedCellsWithDifferentValues));
+        }
+
+        [Test]
+        [Description("When 2 NxM files are being compared")]
+        public void AssertSameSizeFileComparrison()
+        {
+            var fileInputA = new FileInput(Csv_TestFile_Path_2);
+            var fileInputB = new FileInput(Csv_TestFile_Path_3);
+            var compareRequest = new CompareRequest(fileInputA, fileInputB);
+
+            var result = _subject.CompareInputs(compareRequest);
+            Assert.That(result.CellsWithDifferentValues.Count(), Is.EqualTo(1));
+            Assert.That(result.CellsWithDifferentValues.First(), Is.EqualTo("D4"));
         }
     }
 }
