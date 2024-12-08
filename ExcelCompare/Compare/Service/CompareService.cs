@@ -60,7 +60,7 @@ public class CompareService : ICompareService
         }
     }
 
-    private  void IterateThroughFileColumns(int minColumns, List<object?> row, int rowIndex, List<string?> listDestination)
+    private void IterateThroughFileColumns(int minColumns, List<object?> row, int rowIndex, List<string?> listDestination)
     {
         for (int j = minColumns; j < row.Count; j++)
         {
@@ -92,7 +92,12 @@ public class CompareService : ICompareService
                 minColumns = columnsInRowA;
                 IterateThroughFileColumns(minColumns, rowB, i, cellsOnlyInFileB);
             }
+            else
+            {
+                minColumns = columnsInRowA; //else default to either of them
+            }
 
+            
             CompareCommonCells(minColumns, i, rowA, rowB, cellsOnlyInFileA, cellsOnlyInFileB, cellsWithDifferentValues); //rest of file
         }
     }
